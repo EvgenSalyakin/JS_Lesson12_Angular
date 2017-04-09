@@ -1,9 +1,9 @@
 <div>
-    <h2>Technologies</h2>
-    <p><b>Web:</b> HTML, CSS (SCSS, SASS), BOOTSTRAP</p>
-    <p><b>JavaScript:</b> ES5, ES6, JQuery, AngularJS, TypeScript</p>
-    <h2>Languages</h2>
-    <ul>
-        <li ng-repeat="language in languages">{{language}}</li>
-    </ul>
+    <h2>Skills</h2>
+    <div ng-repeat="item in skills">
+        <p>{{item.category}}</p>
+        <ul>
+            <li ng-repeat="skill in item.data">{{skill}}</li>
+        </ul>
+    </div>
 </div>

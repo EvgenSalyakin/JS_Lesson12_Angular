@@ -1,7 +1,7 @@
-angular.module('CVApp', ["ngRoute"])
+angular.module('App', ["ngRoute"])
 
     .config(function ($routeProvider, $locationProvider) {
-        $routeProvider.when('/',
+        $routeProvider.when('/about',
             {
                 templateUrl:'templates/about.html',
                 controller:'MainCtrl'
@@ -30,17 +30,47 @@ angular.module('CVApp', ["ngRoute"])
     })
 
     .controller('MainCtrl', function($scope) {
-        $scope.education = ['2001 – 2012: Cherkasy Gymnasium №31',
-            '2012 – 2016: Cherkasy Bohdan Khmelnytsky National University. Department of Foreign languages. Speciality: English language and literature, bachelor',
-            '2016 – nowadays: Cherkasy Bohdan Khmelnytsky National University. Department of Foreign languages. Speciality: English language and literature, master',
-        '2014, 2015: Internship in the USA by the program Work and Travel, (2014 - Gaylord, Tennessee; 2015 - J.W. Marriott, Texas)',
-        '2016 – nowadays: JavaScript courses by GeekHub'];
-
-        $scope.hobbies = ['Music', 'Table tennis', 'Football', 'Movie'];
-        $scope.languages = ['Ukrainian (native)', 'Russian (fluent)', 'English (Advanced)', 'German (Pre-Intermediate)'];
+        $scope.contacts = [
+            {name:'Email', data:'e.salyakin@gmail.com'},
+            {name:'Phone', data:'(093) 951-73-82'},
+            {name:'Skype', data:'e.salyakin'},
+            {name:'GitHub', data:'https://github.com/EvgenSalyakin/'}
+        ];
+        $scope.skills = [
+            {   category:"Programming Languages/ Technologies",
+                data: [
+                    "JavaScript",
+                    "HTML/CSS",
+                    "1C"
+                ]},
+            {   category:"Frameworks/Libraries",
+                data: [
+                    "React JS",
+                    "Meteor JS",
+                    "Angular JS",
+                    "Bootstrap",
+                    "jQuery",
+                    "Node JS",
+                    "Express",
+                    "Socket.io"
+                ]},
+            {   category:"Development Tools",
+                data: [
+                    "Git",
+                    "WebPack",
+                    "Heroku",
+                    "WebStorm"
+                ]},
+            {   category:"Data Base",
+                data: [
+                    "MS SQL",
+                    "MongoDB",
+                    "PostgresSQL",
+                    "MySQL"
+                ]}
+        ];
 
         $scope.messageId = document.getElementById('mail');
-
         $scope.sendMessage = function () {
             location = "/submit/" + encodeURIComponent($scope.messageId.value);
             console.log(location);

@@ -1,66 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App">
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
           integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    <title>JS6 lesson 3 Yevhenii Saliakin</title>
-    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <title>JS6 lesson 12 Yevhenii Saliakin</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
 </head>
 <body>
 <div class="container-fluid bg_l3">
     <header class="wrapper text-xs-center">
         <h2 class="page-title"><img src="../img/icon.png" alt="page title"/>Lesson 3</h2>
-        <h3>Recursion</h3>
-        <a class="button" href="../index.html">· Home page ·</a>
+        <h3>Angular JS</h3>
         <br/>
-        <a href="https://github.com/EvgenSalyakin/evgensalyakin.github.io/tree/master/lesson_3">· My project on GitHub ·</a>
+        <a href="https://github.com/EvgenSalyakin/evgensalyakin.github.io/tree/master/lesson_12">· My project on GitHub ·</a>
     </header>
 
     <div class="wrapper">
         <div class='block'>
-            <div class="block-title">Factorial</div>
-            <p>Expression: </p>
-            <p id='result1'></p>
-            <p>Performance (ms): </p>
-            <p id='performance-measurement1'></p>
-        </div>
-        <div class='block'>
-            <div class="block-title">Involution</div>
-            <p>Expression: </p>
-            <p id='result2'></p>
-            <p>Performance (ms): </p>
-            <p id='performance-measurement2'></p>
-        </div>
-        <div class='block'>
-            <div class="block-title">Sum Digit</div>
-            <p>Expression: </p>
-            <p id='result3'></p>
-            <p>Performance (ms): </p>
-            <p id='performance-measurement3'></p>
-        </div>
-        <div class='block'>
-            <div class="block-title">Arithmetic progression</div>
-            <p>Expression: </p>
-            <p id='result4'></p>
-            <p>Performance (ms): </p>
-            <p id='performance-measurement4'></p>
-        </div>
-        <div class='block'>
-            <div class="block-title">Fibonacci</div>
-            <p>Expression: </p>
-            <p id='result5'></p>
-            <p>Performance (ms): </p>
-            <p id='performance-measurement5'></p>
+            <nav>
+                <a ng-href="#/about">About</a>
+                <a ng-href="#/portfolio">Portfolio</a>
+                <a ng-href="#/skills">Skills</a>
+                <a ng-href="#/experience">Experience</a>
+                <a ng-href="#/contact">Contact</a>
+            </nav>
+            <ng-view></ng-view>
         </div>
     </div>
 
     <footer class="wrapper text-xs-center">
-        <a class="button" href="../index.html">· Home page ·</a>
         <br/>
-        <a href="https://github.com/EvgenSalyakin/evgensalyakin.github.io/tree/master/lesson_3">· My project on GitHub ·</a>
-        <p>Copyleft 2016 by Yevhenii Saliakin</p>
+        <a href="https://github.com/EvgenSalyakin/evgensalyakin.github.io/tree/master/lesson_12">· My project on GitHub ·</a>
+        <p>Copyleft 2017 by Yevhenii Saliakin</p>
     </footer>
     <script src="main.js"></script>
 </div>
