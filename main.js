@@ -1,7 +1,7 @@
 angular.module('App', ["ngRoute"])
 
     .config(function ($routeProvider, $locationProvider) {
-        $routeProvider.when('/about',
+        $routeProvider.when('/',
             {
                 templateUrl:'templates/about.html',
                 controller:'MainCtrl'
