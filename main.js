@@ -32,13 +32,13 @@ angular.module('App', ["ngRoute"])
             {name:'GitHub', data:'https://github.com/EvgenSalyakin/'}
         ];
         $scope.skills = [
-            {   category:"Programming Languages/ Technologies",
+            {   category:"Program. Languages / Technologies :",
                 data: [
                     "JavaScript",
                     "HTML/CSS",
                     "1C"
                 ]},
-            {   category:"Frameworks/Libraries",
+            {   category:"Frameworks / Libraries :",
                 data: [
                     "React JS",
                     "Meteor JS",
@@ -49,14 +49,14 @@ angular.module('App', ["ngRoute"])
                     "Express",
                     "Socket.io"
                 ]},
-            {   category:"Development Tools",
+            {   category:"Development Tools :",
                 data: [
                     "Git",
                     "WebPack",
                     "Heroku",
-                    "WebStorm"
+                    "Php/WebStorm"
                 ]},
-            {   category:"Data Base",
+            {   category:"Data Base :",
                 data: [
                     "MS SQL",
                     "MongoDB",

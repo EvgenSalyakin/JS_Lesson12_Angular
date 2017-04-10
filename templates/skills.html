@@ -1,7 +1,7 @@
-<div>
+<div class="skill">
     <h2>Skills</h2>
-    <div ng-repeat="item in skills">
-        <p>{{item.category}}</p>
+    <div ng-repeat="item in skills" class="skill-block">
+        <h4>{{item.category}}</h4>
         <ul>
             <li ng-repeat="skill in item.data">{{skill}}</li>
         </ul>

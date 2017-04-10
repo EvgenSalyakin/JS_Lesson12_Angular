@@ -3709,4 +3709,24 @@ nav div.effect-2 {
     transform: rotate(0deg) translateX(50%);
 }
 
+.skill .skill-block{
+    width: 25%;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.skill .skill-block h4 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #9dd5ff;
+    font-weight: 700;
+    text-align: left;
+}
+
+.skill .skill-block ul {
+    margin: 5px 0;
+    padding: 0 0 0 15px;
+}
 
