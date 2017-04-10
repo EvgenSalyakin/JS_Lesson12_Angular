@@ -1,14 +1,15 @@
-<div class="container" id="contact">
-    <h2>Contact me</h2>
-    <form name="myForm" id="myForm" novalidate >
-        <div class="col-md-4"><input id="name" name="name" ng-model="name" placeholder="Name" required novalidate /></div>
+<div class="container animated flipInX" id="contact">
+    <div class="innerContainer">
+        <h2>Contact me</h2>
+        <form name="myForm" id="myForm" novalidate>
+            <input class="inputBox" id="name" name="name" ng-model="name" placeholder="Name" required novalidate/>
 
-        <div class="col-md-4"> <input id="email" type="email" name="email" ng-model="email" placeholder="E-mail" required novalidate /></div>
+            <input class="inputBox" id="email" type="email" name="email" ng-model="email" placeholder="E-mail" required novalidate/>
 
-        <div class="col-md-12">
-            <textarea rows="5" cols="50" id="mail" placeholder="message" name="message" ng-model="message" ng-minlength="20" required></textarea>
-        </div>
+            <textarea class="inputBox" rows="5" cols="50" id="mail" placeholder="message" name="message" ng-model="message"
+                      ng-minlength="20" required></textarea>
 
-    </form>
-    <div class="col-md-12"><button class="btn btn-default" type="submit" value="bulk" ng-click="sendMessage()" > Send message</button></div>
+            <button class="btn btn-default submitButton" type="submit" value="bulk" ng-click="sendMessage()"> Send message</button>
+        </form>
+    </div>
 </div>

@@ -11,11 +11,6 @@ angular.module('App', ["ngRoute"])
                 templateUrl:'templates/skills.html',
                 controller:'MainCtrl'
             });
-        $routeProvider.when('/experience',
-            {
-                templateUrl:'templates/experience.html',
-                controller:'MainCtrl'
-            });
         $routeProvider.when('/portfolio',
             {
                 templateUrl:'templates/portfolio.html',

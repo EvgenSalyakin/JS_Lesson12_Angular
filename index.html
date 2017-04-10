@@ -11,22 +11,29 @@
     <script src="node_modules/angular-route/angular-route.js"></script>
 </head>
 <body>
-<div class="container-fluid bg_l3">
+<div class="container-fluid bg_l10">
     <header class="wrapper text-xs-center">
-        <h2 class="page-title"><img src="../img/icon.png" alt="page title"/>Lesson 3</h2>
+        <h2 class="page-title"><img src="/img/icon.png" alt="page title"/>Lesson</h2>
         <h3>Angular JS</h3>
         <br/>
         <a href="https://github.com/EvgenSalyakin/evgensalyakin.github.io/tree/master/lesson_12">· My project on GitHub ·</a>
     </header>
 
-    <div class="wrapper">
+    <div class="wrapper main">
         <div class='block'>
             <nav>
-                <a ng-href="#/about">About</a>
-                <a ng-href="#/portfolio">Portfolio</a>
-                <a ng-href="#/skills">Skills</a>
-                <a ng-href="#/experience">Experience</a>
-                <a ng-href="#/contact">Contact</a>
+                <div class="effect-2">
+                    <a ng-href="#/about">About</a>
+                </div>
+                <div class="effect-2">
+                    <a ng-href="#/portfolio">Portfolio</a>
+                </div>
+                <div class="effect-2">
+                    <a ng-href="#/skills">Skills</a>
+                </div>
+                <div class="effect-2">
+                    <a ng-href="#/contact">Contact</a>
+                </div>
             </nav>
             <ng-view></ng-view>
         </div>
